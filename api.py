@@ -8,12 +8,6 @@ from bundestag_captcha.solver import solve_captcha
 app = Flask(__name__)
 CORS(app)
 
-def log_success(name: str) -> None:
-    data = open("success.txt", "r").read().splitlines()
-    if name not in data:
-        data.append(name)
-    with open("success.txt", "w") as f:
-        f.write('\n'.join(data))
 
 @app.route("/", methods=["POST", "GET"])
 def index():
@@ -22,8 +16,6 @@ def index():
 
     data = request.json.get("src")
     name = request.json.get("name")
-    log_success(name)
-    print("Sending mail to:", name)
 
     if not data:
         return {"status": "Error"}, 500
