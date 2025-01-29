@@ -40,8 +40,8 @@ setTimeout(() => {
         const base64String = base64Image.split(',')[1];
         const payload = { src: base64String, name: mdb_name };
 
-        // Send payload to local API server to get captcha solution back
-        fetch('https://localhost:8080/', {
+        // Send payload to remote API server to get captcha solution back
+        fetch('https://195.90.200.158:8080/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
