@@ -33,6 +33,3 @@ Entwickelt und getestet wurde auf Linux (Linux --- 6.6.34-1-MANJARO) mit Python 
 Der Code in `solver.py` funktioniert, ist aber nicht schön. Hier kann gerne bereinigt werden, solange die Funktionalität weiterhin gegeben ist.
 
 Informationen zum Captcha Solver finden sich in der zugehörigen [README](bundestag_captcha/README.md).
-
-# Bisherige Antworten an mich (1/43)
-- Melanie Bernstein: Beantwortet nur Anfragen aus ihrem eigenen Wahlkreis
